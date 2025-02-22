@@ -37,9 +37,3 @@ Password Reset/Email Verification: Implement functionality for users to reset th
 Role-based Authorization: Use JWT to manage user roles (e.g., Admin, User) and restrict certain actions based on roles.<br/>
 Refresh Tokens: Implement refresh tokens to keep users logged in without having to constantly log in after the JWT expires.<br/>
 This project will help you practice both frontend and backend development and solidify your understanding of secure authentication mechanisms like JWT.<br/>
-
-<style>
-p {
-    margin-top: -10px;
-}
-</style>
