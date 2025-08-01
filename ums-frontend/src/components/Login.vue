@@ -97,14 +97,8 @@ img {
 .password::before {
     content: "Password";
 }
-.email:focus-within::before {
+.email:focus-within::before, .password:focus-within::before {
     color: #4285F4;
-}
-.password:focus-within::before {
-    color: #4285F4;
-}
-.btn {
-    margin-left: 10px;
 }
 hr {
     margin: -10px 90px -10px 100px;
@@ -142,7 +136,6 @@ hr {
     color: white;
 }
 .login-footer p {
-   margin-top: 100px;
    font-size: 10px
 }
 .login-footer p span {

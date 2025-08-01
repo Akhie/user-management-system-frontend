@@ -20,6 +20,7 @@ const handleSignUp = () => {
 </script>
 
 <template>
+<div class="signup-wrapper">
   <div class="main-container">
     <div class="left-container">
         <h3 v-once class="logo">{{ logo }}</h3>
@@ -33,28 +34,34 @@ const handleSignUp = () => {
                 <input type="password" v-model="password" placeholder="password" />
             </div>
         </div>
-        <button type="submit" v-once class="btn" @click="handleSignUp"> Sign Up </button>
-        <div class="login-footer">
-            <p>Already have an account? <span @click="handleLogin">Login</span></p>
-        </div>
     </div>
     <div class="right-container">
-        <div class="username">
-            <input type="email" v-model="email" placeholder="Username must be unique" />
-        </div>
-        <div class="age">
-            <input type="number" v-model="age" placeholder="Enter your age" />
+        <div class="main">
+            <div class="username">
+                <input type="text" v-model="username" placeholder="Username must be unique" />
+            </div>
+            <div class="age">
+                <input type="number" v-model="age" placeholder="Enter your age" />
+            </div>
         </div>
     </div>
   </div>
+  <button type="submit" v-once class="btn" @click="handleSignUp"> Sign Up </button>
+    <div class="login-footer">
+        <p>Already have an account? <span @click="handleLogin">Login</span></p>
+    </div>
+</div>
 </template>
 
 <style scoped>
-.main-container {
+.signup-wrapper {
   border: 1px solid #ddd;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(0, 0, 0, 0.1);
   margin: 50px 250px;
   height: 540px;
+}
+.main-container {
+  height: 400;
   display: flex;
 }
 .left-container {
@@ -62,7 +69,7 @@ const handleSignUp = () => {
   width: 50%;
 }
 .right-container {
-  margin-top: 205px;
+  margin-top: 120px;
   padding: 20px;
   width:50%;
 }
@@ -105,17 +112,21 @@ img {
 .username input, .age input {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 .email:focus-within::before, .password:focus-within::before, .age:focus-within::before, .username:focus-within::before {
     color: #4285F4;
 }
 .btn {
-    margin-top: -10px;
-    margin-left: 220px;
+    left: 37%;
+    width: 280px;
+    position: relative;
+}
+.login-footer {
+    top: 90px !important;
+    left: 10px;
 }
 .login-footer p {
-   margin-top: 100px;
    font-size: 10px
 }
 .login-footer p span {

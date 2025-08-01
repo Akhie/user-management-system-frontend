@@ -5,9 +5,10 @@
 input {
     width: 100%;
     padding: 10px;
+    border: 1px solid black !important;
 }
 input:focus {
-    border: 2px solid #4285F4;
+    border: 2px solid #4285F4 !important;
     outline: none;
 }
 .btn {
@@ -20,4 +21,13 @@ input:focus {
 }
 .btn:hover, .btn:focus, .btn:active {
     background-color: #4169E1;
+    cursor: pointer;
+}
+.login-footer span {
+    cursor: pointer;
+}
+.login-footer {
+    position: relative;
+    bottom: 10px;
+    top: 85px;
 }
