@@ -37,3 +37,8 @@ Password Reset/Email Verification: Implement functionality for users to reset th
 Role-based Authorization: Use JWT to manage user roles (e.g., Admin, User) and restrict certain actions based on roles.<br/>
 Refresh Tokens: Implement refresh tokens to keep users logged in without having to constantly log in after the JWT expires.<br/>
 This project will help you practice both frontend and backend development and solidify your understanding of secure authentication mechanisms like JWT.<br/>
+
+## Bonus Features (Add on): To be implemented as main feature of the application
+user's will be able to do the live chatting using socket connection
+need to write jest test cases and had to use Vuetify 3 library for the main page creation
+had to implement husky for the linting and code formatting
